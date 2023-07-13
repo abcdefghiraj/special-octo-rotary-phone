@@ -12,4 +12,9 @@ jobs:
           id: stark
           uses: abcdefghiraj/accessibility-check-action@main
           with:
-            milliseconds: 100
+            setup: 'npm i'
+            serve: 'npm run dev'
+            url: 'http://localhost:3000'
+            token: 'test-token'
+          env:
+            STARK_REPORT_URL: 'http://localhost:3001'
