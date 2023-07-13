@@ -1,0 +1,7 @@
+{
+    "reporters": {
+        "http": {
+            "url": "http://localhost:3001/:runId"
+        }
+    }
+}
